@@ -13,9 +13,6 @@ on:
     types:
       - webhook
 
-env:
-  python_version: 3.10.15
-
 jobs:
   unitary_test_job:
     runs-on: ubuntu-latest
@@ -27,7 +24,7 @@ jobs:
       - name: Set up Python 3.10.14
         uses: actions/setup-python@v1
         with:
-          python-version: $python_version
+          python-version: 3.10.15
 
       - name: Install dependencies
         run: |
@@ -48,7 +45,7 @@ jobs:
       - name: Set up Python 3.10
         uses: actions/setup-python@v1
         with:
-          python-version: $python_version
+          python-version: 3.10.15
 
       - name: Install dependencies
         run: |
@@ -70,7 +67,7 @@ jobs:
           - name: Set up Python 3.10.14
             uses: actions/setup-python@v1
             with:
-                python-version: $python_version
+                python-version: 3.10.15
 
           - name: Install dependencies
             run: |
