@@ -124,7 +124,7 @@ def config_mlflow():
         None
     """
     os.environ['MLFLOW_TRACKING_USERNAME'] = 'brian.kurosawa'
-    os.environ['MLFLOW_TRACKING_TOKEN'] = '6d730ef4a90b1caf28fbb01e5748f0874fda6077'
+    os.environ['MLFLOW_TRACKING_PASSWORD'] = 'a24d7ffbb02e46ce97b7726d6bdd3cfccd17b58e'
     mlflow.set_tracking_uri('https://dagshub.com/brian.kurosawa/my-first-repo.mlflow')
 
     mlflow.tensorflow.autolog(log_models=True,
